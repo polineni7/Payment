@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		paymentGateway
+
+	</title>
+</head>
+<body>
+	<form action="#" method="POST">
+  <label for="Amount">Enter Amount </label><br>
+  <input type="text" name="Amount" id="Amt" minlength="1"><br>
+  <label for="CreditCardNumber">Enter CreditCardNumber</label><br>
+  <input type="text" id="CreditCardNumber" name="CreditCardNumber" minlength="16"><br>
+  <label for="CardHolder">Enter CardHolder Name</label><br>
+  <input type="text" id="CardHolder" name="CardHolder" minlength="3"><br>
+  <label for="ExpirationDate">ExpirationDate</label><br>
+  				<select name='expireMM' id='expireMM'>
+    				<option value=''>Month</option>
+    				<option value='01'>January</option>
+    				<option value='02'>February</option>
+    				<option value='03'>March</option>
+    				<option value='04'>April</option>
+    				<option value='05'>May</option>
+    				<option value='06'>June</option>
+    				<option value='07'>July</option>
+    				<option value='08'>August</option>
+    				<option value='09'>September</option>
+    				<option value='10'>October</option>
+    				<option value='11'>November</option>
+    				<option value='12'>December</option>
+				</select> 
+				<select name='expireYY' id='expireYY'>
+   					<option value=''>Year</option>
+    				<option value='20'>2020</option>
+    				<option value='21'>2021</option>
+    				<option value='22'>2022</option>
+    				<option value='23'>2023</option>
+    				<option value='24'>2024</option>
+				</select> 
+				<input class="inputCard" type="hidden" name="ExpirationDate" id="ExpirationDate" maxlength="4"/><br>
+	<label for="SecurityCode"> SecurityCode CVV</label><br>
+	<input type="Number" name="SecurityCode" id="SecurityCode" minlength="3"  maxlength="3"><br>
+	<input type="submit" value="Pay">
+
+</body>
+</html>
